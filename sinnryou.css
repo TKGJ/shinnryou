@@ -1,0 +1,30 @@
+.biz-hour {
+  border-collapse: collapse;
+}
+@media screen and (max-width: 414px) {
+  .biz-hour {/* スマホのときだけ親要素いっぱいに */
+    width: 100%;
+  }
+}
+.biz-hour th, .biz-hour td {
+  padding: 10px;
+  text-align: center;
+  /* 枠線。色を変えたい時は#ff6680というところをお好みで */
+  border: 1px solid #ff6680;
+}
+
+/* 上段。backgroundを書き換えれば背景色が変わります。 */
+.biz-hour th {
+  background: pink;
+  font-weight: normal;
+}
+
+/* 土曜日の文字色 */
+.biz-hour th.sat {
+  color: #3db2da;
+}
+
+/* 日曜日の文字色 */
+.biz-hour th.sun {
+  color: #e66a6a;
+}
